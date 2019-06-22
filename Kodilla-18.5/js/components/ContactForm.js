@@ -5,7 +5,7 @@ var ContactForm = React.createClass({
 
   render: function() {
     return (
-      React.createElement('form'),
+      React.createElement('form',
       { className: 'contactForm' },
       React.createElement('input', {
         type: 'text',
@@ -23,6 +23,6 @@ var ContactForm = React.createClass({
         value: this.props.contact.email
       }),
       React.createElement('button', { type: 'submit' }, 'Dodaj kontakt')
-    );
+    ))
   }
 });
