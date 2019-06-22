@@ -1,0 +1,17 @@
+{
+  "name": "react_kodilla_18_4",
+  "version": "1.0.0",
+  "description": "react component",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "kodilla",
+    "movies",
+    "components"
+  ],
+  "author": "BB",
+  "license": "ISC"
+}
