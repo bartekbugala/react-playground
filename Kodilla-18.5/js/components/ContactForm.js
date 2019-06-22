@@ -14,7 +14,7 @@ var ContactForm = React.createClass({
       }),
       React.createElement('input', {
         type: 'text',
-        paceholder: 'Nazwisko',
+        placeholder: 'Nazwisko',
         value: this.props.contact.lastName
       }),
       React.createElement('input', {
