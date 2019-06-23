@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.col-1 {
+  flex: 0 0 8.33333%;
+  max-width: 8.33333%;
+}
+
+.col-2 {
+  flex: 0 0 16.66667%;
+  max-width: 16.66667%;
+}
+
+.col-3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.col-4 {
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+}
+
+.col-5 {
+  flex: 0 0 41.66667%;
+  max-width: 41.66667%;
+}
+
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.col-7 {
+  flex: 0 0 58.33333%;
+  max-width: 58.33333%;
+}
+
+.col-8 {
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
+}
+
+.col-9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+.col-10 {
+  flex: 0 0 83.33333%;
+  max-width: 83.33333%;
+}
+
+.col-11 {
+  flex: 0 0 91.66667%;
+  max-width: 91.66667%;
+}
+
+.col-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.app,
+.contactForm,
+.contactsList,
+.contactItem,
+.contactLabel,
+.contactEmail {
+  border: 6px black solid;
+  border-radius: 10px;
+}
+
+.contactCol {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contactImage {
+  width: 100px;
+  max-width: 100%;
+  height: auto;
+  border: none;
+}
+
+.contactLabel,
+.contactEmail {
+  margin: 5px 0;
+  display: flex;
+  flex: 1 1 80%;
+  justify-content: center;
+  padding: 10px;
+}
+
+.contactItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100%;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=layout.css.map */
