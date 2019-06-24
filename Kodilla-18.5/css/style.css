@@ -1,198 +1,59 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
-body {
-  background-color: white;
-}
+body { background-color: white; }
 
-.col-1 {
-  -ms-flex: 0 0 8.33333%;
-      flex: 0 0 8.33333%;
-  max-width: 8.33333%;
-}
+.col-1 { -ms-flex: 0 0 8.33333%; flex: 0 0 8.33333%; max-width: 8.33333%; }
 
-.col-2 {
-  -ms-flex: 0 0 16.66667%;
-      flex: 0 0 16.66667%;
-  max-width: 16.66667%;
-}
+.col-2 { -ms-flex: 0 0 16.66667%; flex: 0 0 16.66667%; max-width: 16.66667%; }
 
-.col-3 {
-  -ms-flex: 0 0 25%;
-      flex: 0 0 25%;
-  max-width: 25%;
-}
+.col-3 { -ms-flex: 0 0 25%; flex: 0 0 25%; max-width: 25%; }
 
-.col-4 {
-  -ms-flex: 0 0 33.33333%;
-      flex: 0 0 33.33333%;
-  max-width: 33.33333%;
-}
+.col-4 { -ms-flex: 0 0 33.33333%; flex: 0 0 33.33333%; max-width: 33.33333%; }
 
-.col-5 {
-  -ms-flex: 0 0 41.66667%;
-      flex: 0 0 41.66667%;
-  max-width: 41.66667%;
-}
+.col-5 { -ms-flex: 0 0 41.66667%; flex: 0 0 41.66667%; max-width: 41.66667%; }
 
-.col-6 {
-  -ms-flex: 0 0 50%;
-      flex: 0 0 50%;
-  max-width: 50%;
-}
+.col-6 { -ms-flex: 0 0 50%; flex: 0 0 50%; max-width: 50%; }
 
-.col-7 {
-  -ms-flex: 0 0 58.33333%;
-      flex: 0 0 58.33333%;
-  max-width: 58.33333%;
-}
+.col-7 { -ms-flex: 0 0 58.33333%; flex: 0 0 58.33333%; max-width: 58.33333%; }
 
-.col-8 {
-  -ms-flex: 0 0 66.66667%;
-      flex: 0 0 66.66667%;
-  max-width: 66.66667%;
-}
+.col-8 { -ms-flex: 0 0 66.66667%; flex: 0 0 66.66667%; max-width: 66.66667%; }
 
-.col-9 {
-  -ms-flex: 0 0 75%;
-      flex: 0 0 75%;
-  max-width: 75%;
-}
+.col-9 { -ms-flex: 0 0 75%; flex: 0 0 75%; max-width: 75%; }
 
-.col-10 {
-  -ms-flex: 0 0 83.33333%;
-      flex: 0 0 83.33333%;
-  max-width: 83.33333%;
-}
+.col-10 { -ms-flex: 0 0 83.33333%; flex: 0 0 83.33333%; max-width: 83.33333%; }
 
-.col-11 {
-  -ms-flex: 0 0 91.66667%;
-      flex: 0 0 91.66667%;
-  max-width: 91.66667%;
-}
+.col-11 { -ms-flex: 0 0 91.66667%; flex: 0 0 91.66667%; max-width: 91.66667%; }
 
-.col-12 {
-  -ms-flex: 0 0 100%;
-      flex: 0 0 100%;
-  max-width: 100%;
-}
+.col-12 { -ms-flex: 0 0 100%; flex: 0 0 100%; max-width: 100%; }
 
-.app {
-  max-width: 800px;
-  margin: 0 auto;
-  font-family: arial;
-  font-size: 20px;
-}
+.app { max-width: 800px; margin: 0 auto; font-family: arial; font-size: 20px; }
 
-.app,
-.contactForm {
-  border: 2px #040404 solid;
-  padding: 20px;
-}
+.app, .contact-form { border: 2px #040404 solid; padding: 20px; }
 
-.contactForm {
-  font-size: 20px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
+.contact-form { font-size: 20px; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
-.contactForm input {
-  font-size: inherit;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  border: none;
-  border-bottom: 1px solid #e2e2e2;
-}
+.contact-form input { font-size: inherit; display: -ms-inline-flexbox; display: inline-flex; border: none; border-bottom: 1px solid #e2e2e2; }
 
-.contactForm input[type='text'] {
-  -ms-flex: 1 1 25%;
-      flex: 1 1 25%;
-  margin: 10px 10px 20px 10px;
-}
+.contact-form input[type='text'] { -ms-flex: 1 1 25%; flex: 1 1 25%; margin: 10px 10px 20px 10px; }
 
-.contactForm input[type='email'] {
-  -ms-flex: 1 1 60%;
-      flex: 1 1 60%;
-  margin: 10px;
-}
+.contact-form input[type='email'] { -ms-flex: 1 1 60%; flex: 1 1 60%; margin: 10px; }
 
-.contactForm button {
-  font-size: inherit;
-  border: none;
-  padding: 20px 30px;
-  background-color: #73a7fc;
-  box-shadow: 0 3px 6px #b1b1b1;
-  transition: linear box-shadow 0.2s, linear color 0.2s, linear background-color 0.2s;
-  border-radius: 5px;
-}
+.contact-form button { font-size: inherit; border: none; padding: 20px 30px; background-color: #73a7fc; box-shadow: 0 3px 6px #b1b1b1; transition: linear box-shadow 0.2s, linear color 0.2s, linear background-color 0.2s; border-radius: 5px; }
 
-.contactForm button:hover {
-  color: #616161;
-  background-color: #9ec2fd;
-}
+.contact-form button:hover { color: #616161; background-color: #9ec2fd; }
 
-.contactForm button:active {
-  color: #616161;
-  background-color: #9ec2fd;
-  box-shadow: inset 0 0 2px #b1b1b1, 0 1px 0 #b1b1b1;
-}
+.contact-form button:active { color: #616161; background-color: #9ec2fd; box-shadow: inset 0 0 2px #b1b1b1, 0 1px 0 #b1b1b1; }
 
-.contactsList {
-  margin-top: 20px;
-}
+.contacts-list { margin-top: 20px; }
 
-.contactsList .contactItem {
-  display: -ms-flexbox;
-  display: flex;
-  color: #040404;
-  background-color: #e8eaf6;
-  padding: 10px;
-  margin: 10px 0;
-  font-weight: 300;
-  font-size: 25px;
-}
+.contacts-list .contact-item { display: -ms-flexbox; display: flex; color: #040404; background-color: #e8eaf6; padding: 10px; margin: 10px 0; font-weight: 300; font-size: 25px; }
 
-.contactsList .contactItem .contactCol {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
+.contacts-list .contact-item .contact-col { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
-.contactsList .contactItem .contactCol .contactImage {
-  justify-self: center;
-  max-width: 50px;
-}
+.contacts-list .contact-item .contact-col .contact-image { justify-self: center; max-width: 50px; }
 
-.contactsList .contactItem .contactCol .contactLabel {
-  display: -ms-flexbox;
-  display: flex;
-  padding: 10px 0;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -ms-flex: 1 2 35%;
-      flex: 1 2 35%;
-}
+.contacts-list .contact-item .contact-col .contact-label { display: -ms-flexbox; display: flex; padding: 10px 0; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -ms-flex: 1 2 35%; flex: 1 2 35%; }
 
-.contactsList .contactItem .contactCol .contactEmail {
-  padding: 10px 0;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex: 1 1 100%;
-      flex: 1 1 100%;
-  text-decoration: none;
-  color: #7c7d83;
-}
+.contacts-list .contact-item .contact-col .contact-email { padding: 10px 0; display: -ms-flexbox; display: flex; -ms-flex: 1 1 100%; flex: 1 1 100%; text-decoration: none; color: #7c7d83; }
 
-.contactsList .contactItem .contactCol .contactInfoIcon {
-  justify-self: center;
-  max-width: 30px;
-}
-/*# sourceMappingURL=style.css.map */
+.contacts-list .contact-item .contact-col .contact-info-icon { justify-self: center; max-width: 30px; }

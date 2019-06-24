@@ -5,21 +5,21 @@ var Contact = React.createClass({
 
   render: function () {
     return (
-      React.createElement('div', { className: 'contactItem row' },
-        React.createElement('div', { className: 'col-2 contactCol' },
+      React.createElement('div', { className: 'contact-item row' },
+        React.createElement('div', { className: 'col-2 contact-col' },
           React.createElement('img', {
-            className: 'contactImage',
+            className: 'contact-image',
             src: './images/contacts.svg'
           })),
-        React.createElement('div', { className: 'col-8 contactCol' },
-          React.createElement('p', { className: 'contactLabel' }, 'Imię: ' + this.props.item.firstName),
-          React.createElement('p', { className: 'contactLabel' }, 'Nazwisko: ' + this.props.item.lastName),
-          React.createElement('a', { className: 'contactEmail', href: 'mailto:' + this.props.item.email },
+        React.createElement('div', { className: 'col-8 contact-col' },
+          React.createElement('p', { className: 'contact-label' }, 'Imię: ' + this.props.item.firstName),
+          React.createElement('p', { className: 'contact-label' }, 'Nazwisko: ' + this.props.item.lastName),
+          React.createElement('a', { className: 'contact-email', href: 'mailto:' + this.props.item.email },
             this.props.item.email
           )),
-          React.createElement('div', { className: 'col-2 contactCol' },
+          React.createElement('div', { className: 'col-2 contact-col' },
           React.createElement('img', {
-            className: 'contactInfoIcon',
+            className: 'contact-info-icon',
             src: './images/info.svg'
           })),
 

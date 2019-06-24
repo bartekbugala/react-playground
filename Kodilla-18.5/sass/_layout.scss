@@ -21,12 +21,12 @@ body {
 }
 
 .app,
-.contactForm {
+.contact-form {
   border: 2px $contact-main-color solid;
   padding: 20px;
 }
 
-.contactForm {
+.contact-form {
   font-size: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -63,9 +63,9 @@ body {
     }
   }
 }
-.contactsList {
+.contacts-list {
   margin-top: 20px;
-  .contactItem {
+  .contact-item {
     display: flex;
     color: $contact-main-color;
     background-color: $contact-bg-color;
@@ -73,28 +73,28 @@ body {
     margin: 10px 0;
     font-weight: 300;
     font-size: 25px;
-    .contactCol {
+    .contact-col {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      .contactImage {
+      .contact-image {
         justify-self: center;
         max-width: 50px;
       }
-      .contactLabel {
+      .contact-label {
         display: flex;
         padding: 10px 0;
         flex-wrap: nowrap;
         flex: 1 2 35%;
       }
-      .contactEmail {
+      .contact-email {
         padding: 10px 0;
         display: flex;
         flex: 1 1 100%;
         text-decoration: none;
         color: $contact-second-color;
       }
-      .contactInfoIcon {
+      .contact-info-icon {
         justify-self: center;
         max-width: 30px;
       }
