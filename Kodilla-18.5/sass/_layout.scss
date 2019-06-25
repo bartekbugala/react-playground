@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: white;
+}
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    $width: 100% / 12 * $i;
+    flex: 0 0 $width;
+    max-width: $width;
+  }
+}
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: arial;
+  font-size: 20px;
+}
+
+.app,
+.contact-form {
+  border: 2px $contact-main-color solid;
+  padding: 20px;
+}
+
+.contact-form {
+  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  input {
+    font-size: inherit;
+    display: inline-flex;
+    border: none;
+    border-bottom: 1px solid $input-border-color;
+    &[type='text'] {
+      flex: 1 1 25%;
+      margin: 10px 10px 20px 10px;
+    }
+    &[type='email'] {
+      flex: 1 1 60%;
+      margin: 10px;
+    }
+  }
+  button {
+    font-size: inherit;
+    border: none;
+    padding: 20px 30px;
+    background-color: $submit-btn-bg-color;
+    box-shadow: 0 3px 6px $btn-shadow-color;
+    transition: linear box-shadow 0.2s, linear color 0.2s, linear background-color 0.2s;
+    border-radius: 5px;
+    &:hover {
+      color: $contact-icon-color;
+      background-color: $submit-btn-bg-color-hover;
+    }
+    &:active {
+      color: $contact-icon-color;
+      background-color: $submit-btn-bg-color-hover;
+      box-shadow: inset 0 0 2px $btn-shadow-color, 0 1px 0 $btn-shadow-color;
+    }
+  }
+}
+.contacts-list {
+  margin-top: 20px;
+  .contact-item {
+    display: flex;
+    color: $contact-main-color;
+    background-color: $contact-bg-color;
+    padding: 10px;
+    margin: 10px 0;
+    font-weight: 300;
+    font-size: 25px;
+    .contact-col {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      .contact-image {
+        justify-self: center;
+        max-width: 50px;
+      }
+      .contact-label {
+        display: flex;
+        padding: 10px 0;
+        flex-wrap: nowrap;
+        flex: 1 2 35%;
+      }
+      .contact-email {
+        padding: 10px 0;
+        display: flex;
+        flex: 1 1 100%;
+        text-decoration: none;
+        color: $contact-second-color;
+      }
+      .contact-info-icon {
+        justify-self: center;
+        max-width: 30px;
+      }
+    }
+  }
+}
