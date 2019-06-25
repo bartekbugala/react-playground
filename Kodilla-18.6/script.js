@@ -1,5 +1,3 @@
-// abbr for React.createElement
-const RcE = React.createElement;
 const consoleSpacer = function () {
     console.log('-------------------------------------------')
 }
@@ -70,24 +68,24 @@ const Counter = React.createClass({
       listStyle: 'none',
       padding: '10px'
     };
-    return RcE(
+    return React.createElement(
       'div',
       {},
-      RcE(
+      React.createElement(
         'div',
         { style: style },
-        RcE('span', {}, 'Licznik +/-: ' + this.state.counter),
-        RcE('button', { onClick: this.increment, style: btnStyle }, '+1'),
-        RcE('button', { onClick: this.decrement, style: btnStyle }, '-1')
+        React.createElement('span', {}, 'Licznik +/-: ' + this.state.counter),
+        React.createElement('button', { onClick: this.increment, style: btnStyle }, '+1'),
+        React.createElement('button', { onClick: this.decrement, style: btnStyle }, '-1')
       ),
-      RcE(
+      React.createElement(
         'div',
         {},
-        RcE('span', {}, 'Licznik *//: ' + this.state.counter2),
-        RcE('button', { onClick: this.multiply, style: btnStyle }, '*2'),
-        RcE('button', { onClick: this.divide, style: btnStyle }, '/2')
+        React.createElement('span', {}, 'Licznik *//: ' + this.state.counter2),
+        React.createElement('button', { onClick: this.multiply, style: btnStyle }, '*2'),
+        React.createElement('button', { onClick: this.divide, style: btnStyle }, '/2')
       ),
-      RcE('button', { onClick: this.reset }, 'Reset')
+      React.createElement('button', { onClick: this.reset }, 'Reset')
     );
   },
 
@@ -129,9 +127,6 @@ const Counter = React.createClass({
   }
 });
 
-const element = RcE(Counter);
-const element2 = RcE(Counter);
-
 const CountersList = React.createClass({
   propTypes: {
     array: React.PropTypes.array.isRequired
@@ -143,16 +138,14 @@ const CountersList = React.createClass({
       padding: '10px'
     };
     const counters = this.props.array.map(function(element) {
-      return RcE(Counter, { key: element });
+      return React.createElement(Counter, { key: element });
     });
 
-    return RcE('ul', { style: style }, RcE('li', {}, counters));
+    return React.createElement('ul', { style: style }, React.createElement('li', {}, counters));
   }
 });
 
 const countersArray = [1, 2, 3];
-const element3 = RcE(CountersList, { array: countersArray });
+const element = React.createElement(CountersList, { array: countersArray });
 
 ReactDOM.render(element, document.getElementById('app'));
-ReactDOM.render(element2, document.getElementById('app2'));
-ReactDOM.render(element3, document.getElementById('app3'));
