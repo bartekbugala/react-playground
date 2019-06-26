@@ -9,6 +9,7 @@
     "test": "npm-run-all test:*",
     "test:all": "html-validator --allfiles --verbose",
     "init-project": "npm install && npm-run-all init:*",
+    "init:folders": "mkdirp vendor css sass js images",
     "init:files": "touch css/style.css sass/style.scss",
     "build": "npm-run-all build:*",
     "build:clean": "rimraf css",
