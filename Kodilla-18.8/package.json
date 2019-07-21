@@ -23,7 +23,6 @@
     "watch:browsersync": "browser-sync start --server --files js css *.html",
     "start": "npm-run-all start:*",
     "start:http": "http-server"
-
   },
   "author": "BB",
   "license": "MIT",
